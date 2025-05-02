@@ -5,103 +5,101 @@
   <title>Client Tracker</title>
   <style>
     body {
-  font-family: 'Orbitron', sans-serif;
-  padding: 40px;
-  max-width: 700px;
-  margin: auto;
-  background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
-  color: #e0e1dd;
-  min-height: 100vh;
-}
+      font-family: 'Orbitron', sans-serif;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+      background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+      color: #e0e1dd;
+      min-height: 100vh;
+    }
 
-h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #00ddeb;
-  text-shadow: 0 0 10px rgba(0, 221, 235, 0.7);
-  margin-bottom: 30px;
-}
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #00ddeb;
+      text-shadow: 0 0 10px rgba(0, 221, 235, 0.7);
+      margin-bottom: 30px;
+    }
 
-input, select, textarea, button {
-  width: 100%;
-  margin: 15px 0;
-  padding: 15px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #e0e1dd;
-  box-shadow: 0 0 15px rgba(0, 221, 235, 0.3);
-  transition: all 0.3s ease;
-}
+    input, select, textarea, button {
+      width: 100%;
+      margin: 15px 0;
+      padding: 15px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #e0e1dd;
+      box-shadow: 0 0 15px rgba(0, 221, 235, 0.3);
+      transition: all 0.3s ease;
+    }
 
-input::placeholder, textarea::placeholder {
-  color: #778da9;
-  opacity: 0.8;
-}
+    input::placeholder, textarea::placeholder {
+      color: #778da9;
+      opacity: 0.8;
+    }
 
-input:focus, select:focus, textarea:focus {
-  outline: none;
-  box-shadow: 0 0 20px rgba(0, 221, 235, 0.6);
-  background: rgba(255, 255, 255, 0.15);
-}
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      box-shadow: 0 0 20px rgba(0, 221, 235, 0.6);
+      background: rgba(255, 255, 255, 0.15);
+    }
 
-select {
-  appearance: none;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="%23e0e1dd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 15px top 50%;
-  background-size: 20px;
-}
+    select {
+      appearance: none;
+      background-image: url('data:image/svg+xml;utf8,<svg fill="%23e0e1dd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: right 15px top 50%;
+      background-size: 20px;
+    }
 
-textarea {
-  resize: vertical;
-  min-height: 120px;
-}
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
 
-button {
-  background: linear-gradient(45deg, #00ddeb, #ff006e);
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: 0 0 20px rgba(0, 221, 235, 0.5);
-  transition: transform 0.2s, box-shadow 0.3s;
-}
+    button {
+      background: linear-gradient(45deg, #00ddeb, #ff006e);
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(0, 221, 235, 0.5);
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
 
-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 30px rgba(0, 221, 235, 0.8);
-}
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 30px rgba(0, 221, 235, 0.8);
+    }
 
-button:active {
-  transform: translateY(0);
-}
+    button:active {
+      transform: translateY(0);
+    }
 
-/* Neon glow effect for form container */
-form {
-  background: rgba(27, 38, 59, 0.5);
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 0 40px rgba(0, 221, 235, 0.2);
-  backdrop-filter: blur(10px);
-}
+    form {
+      background: rgba(27, 38, 59, 0.5);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(0, 221, 235, 0.2);
+      backdrop-filter: blur(10px);
+    }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
 
-::-webkit-scrollbar-track {
-  background: #1b263b;
-}
+    ::-webkit-scrollbar-track {
+      background: #1b263b;
+    }
 
-::-webkit-scrollbar-thumb {
-  background: #00ddeb;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 221, 235, 0.5);
-}
+    ::-webkit-scrollbar-thumb {
+      background: #00ddeb;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 221, 235, 0.5);
+    }
   </style>
 </head>
 <body>
@@ -109,9 +107,9 @@ form {
 <h2>Client Entry Form</h2>
 
 <form id="clientForm">
-  <input type="text" id="name" name="name" placeholder="Client Name" required>
+  <input type="text" id="name" name="name" placeholder="Client Phone Number" required>
 
-  <select id="country" name="country" required onchange="populateStates()">
+  <select id="country" name="country" onchange="populateStates()">
     <option value="">Select Country</option>
     <option value="Canada">Canada</option>
     <option value="USA">USA</option>
@@ -119,7 +117,7 @@ form {
     <option value="UAE">UAE</option>
   </select>
 
-  <select id="state" name="state" required>
+  <select id="state" name="state">
     <option value="">Select State</option>
   </select>
 
@@ -139,78 +137,74 @@ form {
 </form>
 
 <script>
-// All states hardcoded 👊
-const statesData = {
-  "Canada": [
-    "Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador",
-    "Nova Scotia", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan",
-    "Northwest Territories", "Nunavut", "Yukon"
-  ],
-  "USA": [
-    "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
-    "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
-    "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
-    "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
-    "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio",
-    "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
-    "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
-    "Wisconsin", "Wyoming"
-  ],
-  "Saudi Arabia": [
-    "Al Bahah", "Al Jawf", "Al Madinah", "Al Qassim", "Ar Riyad", "Asir", "Eastern Province",
-    "Ha'il", "Jazan", "Makkah", "Najran", "Northern Borders", "Tabuk"
-  ],
-  "UAE": [
-    "Abu Dhabi", "Ajman", "Dubai", "Fujairah", "Ras Al Khaimah", "Sharjah", "Umm Al Quwain"
-  ]
-};
+  const statesData = {
+    "Canada": [
+      "Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador",
+      "Nova Scotia", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan",
+      "Northwest Territories", "Nunavut", "Yukon"
+    ],
+    "USA": [
+      "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+      "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+      "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+      "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+      "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio",
+      "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
+      "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+      "Wisconsin", "Wyoming"
+    ],
+    "Saudi Arabia": [
+      "Al Bahah", "Al Jawf", "Al Madinah", "Al Qassim", "Ar Riyad", "Asir", "Eastern Province",
+      "Ha'il", "Jazan", "Makkah", "Najran", "Northern Borders", "Tabuk"
+    ],
+    "UAE": [
+      "Abu Dhabi", "Ajman", "Dubai", "Fujairah", "Ras Al Khaimah", "Sharjah", "Umm Al Quwain"
+    ]
+  };
 
-function populateStates() {
-  const countrySelect = document.getElementById('country');
-  const stateSelect = document.getElementById('state');
-  const selectedCountry = countrySelect.value;
+  function populateStates() {
+    const countrySelect = document.getElementById('country');
+    const stateSelect = document.getElementById('state');
+    const selectedCountry = countrySelect.value;
 
-  // Reset states
-  stateSelect.innerHTML = '<option value="">Select State</option>';
+    stateSelect.innerHTML = '<option value="">Select State</option>';
 
-  if (statesData[selectedCountry]) {
-    statesData[selectedCountry].forEach(state => {
-      const option = document.createElement('option');
-      option.value = state;
-      option.textContent = state;
-      stateSelect.appendChild(option);
-    });
+    if (statesData[selectedCountry]) {
+      statesData[selectedCountry].forEach(state => {
+        const option = document.createElement('option');
+        option.value = state;
+        option.textContent = state;
+        stateSelect.appendChild(option);
+      });
+    }
   }
-}
 
-// Submit form
-document.getElementById('clientForm').addEventListener('submit', function(e) {
-  e.preventDefault();
+  document.getElementById('clientForm').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-  const formData = new FormData(this);
-  const data = {};
+    const formData = new FormData(this);
+    const data = new URLSearchParams();
 
-  formData.forEach((value, key) => {
-    data[key] = value;
+    formData.forEach((value, key) => {
+      data.append(key, value);
+    });
+
+    fetch('https://script.google.com/macros/s/AKfycbw4PjeFkTFe790-4Zde_rE86fKNVpy_1kIADXJ8DXVN-hTKm2Z-eJrC2yOP3EU-_QK6/exec', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: data
+    })
+    .then(() => {
+      alert('✅ Submitted successfully!');
+      document.getElementById('clientForm').reset();
+    })
+    .catch(error => {
+      console.error('❌ Error:', error.message);
+      alert('There was an error submitting. Try again!');
+    });
   });
-
-  fetch('https://script.google.com/macros/s/AKfycbyUY2KuFPtPIef807v4ogM7m3sIhBif5AzYhHPk1fhH7IWReYigo73dvrtYvN90CEF87A/exec', {
-    method: 'POST',
-    mode: 'no-cors',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    body: new URLSearchParams(data)
-  })
-  .then(() => {
-    alert('Submitted successfully!');
-    document.getElementById('clientForm').reset();
-  })
-  .catch(error => {
-    console.error('Error!', error.message);
-    alert('There was an error. Try again!');
-  });
-});
 </script>
 
 </body>
